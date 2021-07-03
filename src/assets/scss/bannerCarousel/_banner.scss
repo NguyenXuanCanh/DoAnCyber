@@ -1,0 +1,32 @@
+
+.carousel{
+  .banner {
+    position: relative;
+        &:hover {
+          .play__btn {
+            opacity: 1;
+          }
+        }
+        .play__btn {
+          position: absolute;
+          top: 46%;
+          left: 46%;
+          z-index: 3;
+          background: 0 0;
+          border: none;
+          transition: 0.5s;
+          opacity: 0;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.carousel-control-next, .carousel-control-prev{
+  height:50%;
+  top: 25% !important;
+}

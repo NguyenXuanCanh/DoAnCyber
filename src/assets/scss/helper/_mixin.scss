@@ -1,0 +1,33 @@
+@mixin item_section1($c, $c2) {
+  color: $c;
+  text-decoration: none;
+  &:hover {
+    color: $c2;
+    transition: 0.5s;
+  }
+}
+@mixin button($w, $h, $c, $bg, $pl, $c2, $bg2, $c3, $c4) {
+  width: $w;
+  height: $h;
+  color: $c;
+  background-color: $bg;
+  margin-left: $pl;
+  text-align: center;
+  border-radius: 6px !important;
+  border-color: $c4;
+  &:hover {
+    color: $c2;
+    background-color: $bg2;
+    border-radius: 6px;
+    border-color: $c3;
+    transition: 0.5s;
+  }
+}
+@mixin footer_a {
+  text-decoration: none;
+  color: #949494;
+  &:hover {
+    color: white;
+    transition: 0.5s;
+  }
+}

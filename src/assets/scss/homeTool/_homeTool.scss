@@ -1,0 +1,36 @@
+.dropdown-menu {
+    right: 0 !important;
+    // left: auto !important;
+  }
+  .dropdown {
+    padding: 0.5rem;
+  }
+  .nav-link {
+    padding: 0;
+  }
+  .home__tool {
+    position: relative;
+    .tool {
+      border-radius: 10px;
+      z-index: 10000;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .tool__item {
+      border: none;
+      padding: 15px 0px;
+      background-color: #fff;
+      a {
+        text-align: left;
+        line-height: 40px;
+        width: 100%;
+      }
+    }
+    .first__item {
+      border-radius: 5px 0 0 5px;
+    }
+    .last__item {
+      border-radius: 0 5px 5px 0;
+    }
+  }

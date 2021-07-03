@@ -1,0 +1,86 @@
+.introduceApp {
+  background-image: url("https://tix.vn/app/assets/img/icons/backapp.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 570px;
+  position: relative;
+  .left {
+    padding-left: 13%;
+    padding-top: 11%;
+    .btnApp {
+      @include button(
+        300px,
+        35px,
+        white,
+        #fb4226,
+        0,
+        white,
+        #fb4226,
+        #fb4226,
+        #fb4226
+      );
+      margin-bottom: 10px;
+    }
+    .left_h {
+      font-size: 30px;
+      line-height: 55px;
+    }
+    .left_p {
+      padding: 1.5rem 0;
+    }
+    .text_p a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: #fb4226;
+        transition: 0.5s;
+      }
+    }
+  }
+  .right {
+    position:absolute;
+    height: 570px;
+    padding-left: 8%;
+    padding-top: 5%;
+    img {
+      width: 46%;
+      height: 95%;
+      
+    }
+    .right_1 {
+      position: absolute;
+    }
+    .right_2 {
+      position: relative;
+      left: 5px;
+      top: 9px;
+      img {
+        width: 165px;
+        height: 350px;
+        border-radius: 17px;
+        display: flex !important;
+        background: transparent;
+      }
+      .slick-next {
+        display: none !important;
+      }
+      .slick-prev {
+        display: none !important;
+      }
+    }
+  }
+  .carousel-inner{
+    width:165px;
+  }
+  .carousel-control-prev{
+    width:21.5%;
+    height:350px; 
+    .carousel-control-prev-icon{
+      background-image:none !important;
+    }
+  }
+  .carousel-control-next{
+    height:0px;
+  }
+}
