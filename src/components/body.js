@@ -3,6 +3,8 @@ import CarouselBanner from './body/carouselBanner'
 import CinemaListComponent from './body/cinemaList'
 import FilmBlock from './body/filmBlock'
 import FilterTool from './body/filter'
+import SearchBar from './body/SearchBar'
+
 import Footer from './body/footer'
 import IntroduceApp from './body/introduceApp'
 import LineComponent from './body/line'
@@ -19,7 +21,8 @@ export default function Body(props) {
             return (
                 <div>
                     <CarouselBanner></CarouselBanner>
-                    <FilterTool></FilterTool>
+                    {/* <FilterTool></FilterTool> */}
+                    <SearchBar></SearchBar>
                     <FilmBlock></FilmBlock>
                     <LineComponent></LineComponent>
                     <CinemaListComponent></CinemaListComponent>

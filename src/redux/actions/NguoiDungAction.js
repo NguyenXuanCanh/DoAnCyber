@@ -48,19 +48,3 @@ export const dangKyAction = (userLogin) => {
         }
     }
 }
-
-export const datVe = (thongTinDatVe) => {
-    return async (dispatch) => {
-        try {
-            let result = axios({
-                url: 'https://movie0706.cybersoft.edu.vn/api/QuanLyDatVe/DatVe',
-                method: 'POST',
-                data: thongTinDatVe,
-                headers: { 'Authorazition': 'Bearer' + localStorage.getItem(ACCESSTOKEN) }
-            })
-            console.log(result.data);
-        } catch (errors) {
-            console.log('error: ', errors.response?.data);
-        }
-    }
-}

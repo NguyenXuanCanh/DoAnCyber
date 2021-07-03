@@ -7,6 +7,7 @@ import { createBrowserHistory } from 'history'
 import HomeTemplate from './Template/HomeTemplate';
 import UserTemplate from './Template/UserTemplate';
 import AdminTemplate from './Template/AdminTemplate';
+import DetailMovie from './components/body/DetailMovie';
 
 export const history = createBrowserHistory();
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" exact component={HomeTemplate}></Route>
           <Route path="/home" exact component={HomeTemplate}></Route>
           <Route path="/admin" exact component={AdminTemplate}></Route>
+          <Route path="/detailMovie/:id" exact component={DetailMovie}></Route>
 
         </div>
       </Switch>

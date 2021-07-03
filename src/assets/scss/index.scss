@@ -1,8 +1,14 @@
 @import "./base/reset";
+@import "./helper/variable";
 @import "./helper/mixin";
+@import "./helper/function";
+@import "./search/search";
+
 @import "./section_1/section_1";
 @import "./section_2/section_2";
 @import "./section_3/section_3";
+@import "./movieDetail/DetailMovie";
+
 @import "./bannerCarousel/banner";
 @import "./film/film";
 @import "./filter/filter";

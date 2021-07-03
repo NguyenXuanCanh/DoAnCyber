@@ -59,6 +59,7 @@ export default function RightHeaderComponent() {
         tenDangNhap = JSON.parse(localStorage.getItem('userlogin')).taiKhoan;
         maLoaiNguoiDung = JSON.parse(localStorage.getItem('userlogin')).maLoaiNguoiDung;
     }
+
     function logOut() {
         localStorage.removeItem('userlogin');
         localStorage.removeItem('accessToken');
